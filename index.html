@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="shortcut icon" href="#" />
         <title>Beatmaker</title>
     </head>
     <body>
@@ -34,11 +35,11 @@
             <div class="snare-track">
                 <div class="controls">
                     <h2>Snare</h2>
-                    <button data-track="0" class="mute snare-volume">
+                    <button data-track="1" class="mute snare-volume">
                         <i class="fas fa-volume-mute"></i>
                     </button>
                     <select name="snare-select" id="snare-select">
-                        <option value="./sounds/snare-accoustic01.wav">Accoustic Snare</option>
+                        <option value="./sounds/snare-acoustic01.wav">Accoustic Snare</option>
                         <option value="./sounds/snare-808.wav">808 Snare</option>
                         <option value="./sounds/snare-vinyl02.wav">Vinyl Snare</option>
                     </select>
@@ -57,11 +58,11 @@
             <div class="hihat-track">
                 <div class="controls">
                     <h2>Hihat</h2>
-                    <button data-track="0" class="mute hihat-volume">
+                    <button data-track="2" class="mute hihat-volume">
                         <i class="fas fa-volume-mute"></i>
                     </button>
                     <select name="hihat-select" id="hihat-select">
-                        <option value="./sounds/hihat-accoustic01.wav">Accoustic Hihat</option>
+                        <option value="./sounds/hihat-acoustic01.wav">Accoustic Hihat</option>
                         <option value="./sounds/hihat-808.wav">808 Hihat</option>
                         <option value="./sounds/hihat-dist02.wav">Dist Hihat</option>
                     </select>
@@ -78,6 +79,10 @@
                 </div>
             </div>
             <button class="play">Play</button>
+            <div class="tempo">
+                <input type="range" class="tempo-slider" min="20" max="300" value="150" />
+                <p>Tempo: <span class="tempo-nr">150</span></p>
+            </div>
         </div>
         <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
         <audio class="snare-sound" src="./sounds/snare-acoustic01.wav"></audio>
